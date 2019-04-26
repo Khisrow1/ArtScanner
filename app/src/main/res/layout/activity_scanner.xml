@@ -46,6 +46,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:singleLine="false"
+        android:maxLines="30"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/ui_surfaceview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,5 +55,18 @@
         app:layout_constraintTop_toBottomOf="@+id/ui_texttitle"
         app:layout_constraintVertical_bias="0.0"
         android:scrollbars="vertical"/>
+    <ImageButton
+        android:id="@+id/ui_play_btn"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ui_textbody"
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="playListener"/>
 
 </android.support.constraint.ConstraintLayout>
